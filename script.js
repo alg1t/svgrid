@@ -45,12 +45,12 @@ function reportWindowSize() {
   // widthOutput.textContent = window.innerWidth;
   const shape = document.getElementById("galleryHeader");
   if (window.innerWidth <= 600) {
-      shape.setAttribute("viewBox", "-70 0 650 100");
+      shape.setAttribute("viewBox", "-120 0 650 100");
   } else if (window.innerWidth <= 900 ) {
         shape.setAttribute("viewBox", "-150 0 750 100");
       
   } else {
-    shape.setAttribute("viewBox", "-430 0 1250 100");
+    shape.setAttribute("viewBox", "-450 0 1350 100");
   }
 }
 
@@ -58,7 +58,7 @@ function reportWindowSize() {
 
 
 
-window.onresize = reportWindowSize;
+window.onload = reportWindowSize;
 //https://primarytech.com/using-svg-with-media-queries/
 
 
