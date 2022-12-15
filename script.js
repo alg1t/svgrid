@@ -12,7 +12,7 @@ function reportWindowSize() {
         shape.setAttribute("viewBox", "-160 0 750 100");
       
   } else {
-    shape.setAttribute("viewBox", "-450 0 1350 100");
+    shape.setAttribute("viewBox", "-460 0 1350 100");
   }
 }
 
