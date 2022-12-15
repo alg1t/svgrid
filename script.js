@@ -47,7 +47,7 @@ function reportWindowSize() {
   if (window.innerWidth <= 600) {
       shape.setAttribute("viewBox", "-120 0 650 100");
   } else if (window.innerWidth <= 900 ) {
-        shape.setAttribute("viewBox", "-150 0 750 100");
+        shape.setAttribute("viewBox", "-160 0 750 100");
       
   } else {
     shape.setAttribute("viewBox", "-450 0 1350 100");
