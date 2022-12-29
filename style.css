@@ -18,7 +18,12 @@ body {
 section#galleryContainer {
   display: grid;
   grid-template-columns: [container-start] 1fr [container-end];
-  grid-template-rows: [header-start] minmax(10vh, 0.1fr) [header-end card-row-start] minmax(90vh, 1fr) [card-row-end];
+  grid-template-rows:
+    [header-start] minmax(10vh, 0.1fr) [header-end card-row-start] minmax(
+      90vh,
+      1fr
+    )
+    [card-row-end];
 }
 
 .wire__map {
@@ -80,7 +85,8 @@ section#galleryContainer {
   height: 53rem;
   position: relative;
 }
-.gallery__card--front, .gallery__card--back {
+.gallery__card--front,
+.gallery__card--back {
   background-color: white;
   height: 100%;
   transition: all 1s ease-in-out;
@@ -91,7 +97,7 @@ section#galleryContainer {
   /* -webkit-backface-visibility: hidden; */
   transform: perspective(100rem);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(245, 11, 11, 0.15);
@@ -107,7 +113,8 @@ section#galleryContainer {
   font-size: 2rem;
   font-weight: 400;
 }
-.gallery__card--picture__front, .gallery__card--picture__back {
+.gallery__card--picture__front,
+.gallery__card--picture__back {
   opacity: 0.82;
   background-size: cover;
   height: 22rem;
@@ -118,22 +125,48 @@ section#galleryContainer {
   border-top-right-radius: 3px;
 }
 .gallery__card:nth-child(1) .gallery__card--picture__front {
-  background-image: linear-gradient(to right bottom, rgb(99, 40, 6), rgb(21, 0, 0)), url("/img/Autumn.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(99, 40, 6),
+      rgb(21, 0, 0)
+    ),
+    url("/img/Autumn.jpg");
 }
 .gallery__card:nth-child(2) .gallery__card--picture__front {
-  background-image: linear-gradient(to right bottom, rgb(99, 40, 6), rgb(21, 0, 0)), url("/img/summer.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(99, 40, 6),
+      rgb(21, 0, 0)
+    ),
+    url("/img/summer.jpg");
 }
 .gallery__card:nth-child(3) .gallery__card--picture__front {
-  background-image: linear-gradient(to right bottom, #225488, #061630), url("/img/sea.jpg");
+  background-image: linear-gradient(to right bottom, #225488, #061630),
+    url("/img/sea.jpg");
 }
 .gallery__card:nth-child(1) .gallery__card--picture__back {
-  background-image: linear-gradient(to right bottom, rgb(99, 40, 6), rgb(21, 0, 0)), url("/img/winter.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(99, 40, 6),
+      rgb(21, 0, 0)
+    ),
+    url("/img/winter.jpg");
 }
 .gallery__card:nth-child(2) .gallery__card--picture__back {
-  background-image: linear-gradient(to right bottom, rgb(99, 40, 6), rgb(21, 0, 0)), url("/img/spring.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(99, 40, 6),
+      rgb(21, 0, 0)
+    ),
+    url("/img/spring.jpg");
 }
 .gallery__card:nth-child(3) .gallery__card--picture__back {
-  background-image: linear-gradient(to right bottom, rgb(99, 40, 6), rgb(21, 0, 0)), url("/img/c3.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(99, 40, 6),
+      rgb(21, 0, 0)
+    ),
+    url("/img/c3.jpg");
 }
 .gallery__card--heading {
   font-family: Khula;
@@ -150,19 +183,31 @@ section#galleryContainer {
   padding: 0.9rem 0.5rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-image: linear-gradient(to right bottom, rgba(253, 136, 0, 0.85), rgba(36, 13, 1, 0.85));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(253, 136, 0, 0.85),
+    rgba(36, 13, 1, 0.85)
+  );
 }
 .gallery__card:nth-child(2) .gallery__card--heading__span {
   padding: 0.9rem 0.5rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-image: linear-gradient(to right bottom, rgba(172, 193, 0, 0.85), rgba(11, 56, 11, 0.85));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(172, 193, 0, 0.85),
+    rgba(11, 56, 11, 0.85)
+  );
 }
 .gallery__card:nth-child(3) .gallery__card--heading__span {
   padding: 0.9rem 0.5rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-image: linear-gradient(to right bottom, rgba(96, 174, 255, 0.85), rgba(6, 22, 48, 0.85));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(96, 174, 255, 0.85),
+    rgba(6, 22, 48, 0.85)
+  );
 }
 .gallery__card--details {
   font-size: 2rem;
@@ -232,7 +277,8 @@ section#galleryContainer {
     transform: rotateY(0);
   }
 }
-.btn:link, .btn:visited {
+.btn:link,
+.btn:visited {
   text-decoration: none;
   padding: 1rem 5rem;
   display: inline-block;
@@ -259,27 +305,51 @@ section#galleryContainer {
   color: rgb(53, 52, 52);
 }
 .btn__white--btn-2 {
-  background-image: linear-gradient(to right bottom, rgba(237, 100, 20, 0.88), rgba(140, 101, 255, 0.88));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(237, 100, 20, 0.88),
+    rgba(140, 101, 255, 0.88)
+  );
   color: aliceblue;
 }
 .btn__white--btn-3 {
-  background-image: linear-gradient(to right bottom, rgba(245, 249, 6, 0.88), rgba(38, 122, 1, 0.88));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(245, 249, 6, 0.88),
+    rgba(38, 122, 1, 0.88)
+  );
   color: #fcfcfc;
 }
 .btn__white--btn-6 {
-  background-image: linear-gradient(to right bottom, rgba(191, 145, 145, 0.95), rgba(84, 30, 37, 0.95));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(191, 145, 145, 0.95),
+    rgba(84, 30, 37, 0.95)
+  );
   color: #fcfaf7;
 }
 .btn__white--btn-1 {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.9), rgba(95, 6, 6, 0.9));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 185, 0, 0.9),
+    rgba(95, 6, 6, 0.9)
+  );
   color: aliceblue;
 }
 .btn__white--btn-4 {
-  background-image: linear-gradient(to right bottom, rgba(172, 193, 0, 0.9), rgba(23, 102, 49, 0.9));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(172, 193, 0, 0.9),
+    rgba(23, 102, 49, 0.9)
+  );
   color: aliceblue;
 }
 .btn__white--btn-5 {
-  background-image: linear-gradient(to right bottom, rgba(96, 174, 255, 0.9), rgba(6, 22, 48, 0.9));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(96, 174, 255, 0.9),
+    rgba(6, 22, 48, 0.9)
+  );
   color: aliceblue;
 }
 .btn__white::after {
@@ -299,13 +369,14 @@ section#galleryContainer {
 }
 .btn--animated {
   -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
-          animation: moveInBottom 0.5s ease-out 0.75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 /*the learn more button*/
-.btn-text:link, .btn-text:visited {
+.btn-text:link,
+.btn-text:visited {
   font-size: 3rem;
   color: #176631;
   display: inline-block;
@@ -323,6 +394,15 @@ section#galleryContainer {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(245, 11, 11, 0.2);
   transform: translateY(-2px);
+}
+.filler {
+  height: 190vh;
+  background-color: brown;
+}
+
+.headerFillerTest {
+  height: 8rem;
+  background-color: #176631;
 }
 
 #cppaint,
@@ -354,9 +434,9 @@ section#galleryContainer {
   stroke-dasharray: 355px;
   stroke-dashoffset: -355px;
   -webkit-animation: p-anim 0.16s linear 0s forwards;
-          animation: p-anim 0.16s linear 0s forwards;
+  animation: p-anim 0.16s linear 0s forwards;
   -webkit-animation-name: p-anim;
-          animation-name: p-anim;
+  animation-name: p-anim;
 }
 @-webkit-keyframes p-anim {
   from {
@@ -381,9 +461,9 @@ section#galleryContainer {
   stroke-dasharray: 160px;
   stroke-dashoffset: -160px;
   -webkit-animation: a-anim 0.16s linear 0.16s forwards;
-          animation: a-anim 0.16s linear 0.16s forwards;
+  animation: a-anim 0.16s linear 0.16s forwards;
   -webkit-animation-name: a-anim;
-          animation-name: a-anim;
+  animation-name: a-anim;
 }
 @-webkit-keyframes a-anim {
   from {
@@ -408,9 +488,9 @@ section#galleryContainer {
   stroke-dasharray: 75px;
   stroke-dashoffset: -75px;
   -webkit-animation: i-anim 0.16s linear 0.32s forwards;
-          animation: i-anim 0.16s linear 0.32s forwards;
+  animation: i-anim 0.16s linear 0.32s forwards;
   -webkit-animation-name: i-anim;
-          animation-name: i-anim;
+  animation-name: i-anim;
 }
 @-webkit-keyframes i-anim {
   from {
@@ -435,9 +515,9 @@ section#galleryContainer {
   stroke-dasharray: 140px;
   stroke-dashoffset: -140px;
   -webkit-animation: n-anim 0.16s linear 0.48s forwards;
-          animation: n-anim 0.16s linear 0.48s forwards;
+  animation: n-anim 0.16s linear 0.48s forwards;
   -webkit-animation-name: n-anim;
-          animation-name: n-anim;
+  animation-name: n-anim;
 }
 @-webkit-keyframes n-anim {
   from {
@@ -462,9 +542,9 @@ section#galleryContainer {
   stroke-dasharray: 142px;
   stroke-dashoffset: -142px;
   -webkit-animation: t-anim 0.16s linear 0.64s forwards;
-          animation: t-anim 0.16s linear 0.64s forwards;
+  animation: t-anim 0.16s linear 0.64s forwards;
   -webkit-animation-name: t-anim;
-          animation-name: t-anim;
+  animation-name: t-anim;
 }
 @-webkit-keyframes t-anim {
   from {
@@ -489,9 +569,9 @@ section#galleryContainer {
   stroke-dasharray: 70px;
   stroke-dashoffset: -70px;
   -webkit-animation: i2-anim 0.16s linear 0.8s forwards;
-          animation: i2-anim 0.16s linear 0.8s forwards;
+  animation: i2-anim 0.16s linear 0.8s forwards;
   -webkit-animation-name: i2-anim;
-          animation-name: i2-anim;
+  animation-name: i2-anim;
 }
 @-webkit-keyframes i2-anim {
   from {
@@ -516,9 +596,9 @@ section#galleryContainer {
   stroke-dasharray: 139px;
   stroke-dashoffset: -139px;
   -webkit-animation: n2-anim 0.16s linear 0.96s forwards;
-          animation: n2-anim 0.16s linear 0.96s forwards;
+  animation: n2-anim 0.16s linear 0.96s forwards;
   -webkit-animation-name: n2-anim;
-          animation-name: n2-anim;
+  animation-name: n2-anim;
 }
 @-webkit-keyframes n2-anim {
   from {
@@ -543,9 +623,9 @@ section#galleryContainer {
   stroke-dasharray: 210px;
   stroke-dashoffset: -210px;
   -webkit-animation: g-anim 0.16s linear 1.12s forwards;
-          animation: g-anim 0.16s linear 1.12s forwards;
+  animation: g-anim 0.16s linear 1.12s forwards;
   -webkit-animation-name: g-anim;
-          animation-name: g-anim;
+  animation-name: g-anim;
 }
 @-webkit-keyframes g-anim {
   from {
@@ -570,9 +650,9 @@ section#galleryContainer {
   stroke-dasharray: 85px;
   stroke-dashoffset: -85px;
   -webkit-animation: s-anim 0.16s linear 1.28s forwards;
-          animation: s-anim 0.16s linear 1.28s forwards;
+  animation: s-anim 0.16s linear 1.28s forwards;
   -webkit-animation-name: s-anim;
-          animation-name: s-anim;
+  animation-name: s-anim;
 }
 @-webkit-keyframes s-anim {
   from {
@@ -597,9 +677,9 @@ section#galleryContainer {
   stroke-dasharray: 245px;
   stroke-dashoffset: -245px;
   -webkit-animation: ciin-anim 0.16s linear 1.44s forwards;
-          animation: ciin-anim 0.16s linear 1.44s forwards;
+  animation: ciin-anim 0.16s linear 1.44s forwards;
   -webkit-animation-name: ciin-anim;
-          animation-name: ciin-anim;
+  animation-name: ciin-anim;
 }
 @-webkit-keyframes ciin-anim {
   from {
@@ -624,9 +704,9 @@ section#galleryContainer {
   stroke-dasharray: 140px;
   stroke-dashoffset: -140px;
   -webkit-animation: cnin-anim 0.16s linear 1.6s forwards;
-          animation: cnin-anim 0.16s linear 1.6s forwards;
+  animation: cnin-anim 0.16s linear 1.6s forwards;
   -webkit-animation-name: ciin-anim;
-          animation-name: ciin-anim;
+  animation-name: ciin-anim;
 }
 @keyframes ciin-anim {
   from {
@@ -642,9 +722,9 @@ section#galleryContainer {
   stroke-dasharray: 385px;
   stroke-dashoffset: -385px;
   -webkit-animation: cmmy-anim 0.16s linear 1.76s forwards;
-          animation: cmmy-anim 0.16s linear 1.76s forwards;
+  animation: cmmy-anim 0.16s linear 1.76s forwards;
   -webkit-animation-name: cmmy-anim;
-          animation-name: cmmy-anim;
+  animation-name: cmmy-anim;
 }
 @-webkit-keyframes cmmy-anim {
   from {
@@ -669,9 +749,9 @@ section#galleryContainer {
   stroke-dasharray: 190px;
   stroke-dashoffset: -190px;
   -webkit-animation: cymy-anim 0.16s linear 1.92s forwards;
-          animation: cymy-anim 0.16s linear 1.92s forwards;
+  animation: cymy-anim 0.16s linear 1.92s forwards;
   -webkit-animation-name: cymy-anim;
-          animation-name: cymy-anim;
+  animation-name: cymy-anim;
 }
 @-webkit-keyframes cymy-anim {
   from {
@@ -696,9 +776,9 @@ section#galleryContainer {
   stroke-dasharray: 230px;
   stroke-dashoffset: -230px;
   -webkit-animation: gg1-anim 0.16s linear 2.08s forwards;
-          animation: gg1-anim 0.16s linear 2.08s forwards;
+  animation: gg1-anim 0.16s linear 2.08s forwards;
   -webkit-animation-name: gg1-anim;
-          animation-name: gg1-anim;
+  animation-name: gg1-anim;
 }
 @-webkit-keyframes gg1-anim {
   from {
@@ -723,9 +803,9 @@ section#galleryContainer {
   stroke-dasharray: 160px;
   stroke-dashoffset: -160px;
   -webkit-animation: ga1-anim 0.16s linear 2.24s forwards;
-          animation: ga1-anim 0.16s linear 2.24s forwards;
+  animation: ga1-anim 0.16s linear 2.24s forwards;
   -webkit-animation-name: ga1-anim;
-          animation-name: ga1-anim;
+  animation-name: ga1-anim;
 }
 @-webkit-keyframes ga1-anim {
   from {
@@ -750,9 +830,9 @@ section#galleryContainer {
   stroke-dasharray: 90px;
   stroke-dashoffset: -90px;
   -webkit-animation: gr-anim 0.16s linear 2.4s forwards;
-          animation: gr-anim 0.16s linear 2.4s forwards;
+  animation: gr-anim 0.16s linear 2.4s forwards;
   -webkit-animation-name: gr-anim;
-          animation-name: gr-anim;
+  animation-name: gr-anim;
 }
 @-webkit-keyframes gr-anim {
   from {
@@ -777,9 +857,9 @@ section#galleryContainer {
   stroke-dasharray: 160px;
   stroke-dashoffset: -160px;
   -webkit-animation: ga2-anim 0.16s linear 2.56s forwards;
-          animation: ga2-anim 0.16s linear 2.56s forwards;
+  animation: ga2-anim 0.16s linear 2.56s forwards;
   -webkit-animation-name: ga2-anim;
-          animation-name: ga2-anim;
+  animation-name: ga2-anim;
 }
 @-webkit-keyframes ga2-anim {
   from {
@@ -804,9 +884,9 @@ section#galleryContainer {
   stroke-dasharray: 220px;
   stroke-dashoffset: -220px;
   -webkit-animation: gg2-anim 0.16s linear 2.72s forwards;
-          animation: gg2-anim 0.16s linear 2.72s forwards;
+  animation: gg2-anim 0.16s linear 2.72s forwards;
   -webkit-animation-name: gg2-anim;
-          animation-name: gg2-anim;
+  animation-name: gg2-anim;
 }
 @-webkit-keyframes gg2-anim {
   from {
@@ -831,9 +911,9 @@ section#galleryContainer {
   stroke-dasharray: 120px;
   stroke-dashoffset: -120px;
   -webkit-animation: ge-anim 0.16s linear 2.88s forwards;
-          animation: ge-anim 0.16s linear 2.88s forwards;
+  animation: ge-anim 0.16s linear 2.88s forwards;
   -webkit-animation-name: ge-anim;
-          animation-name: ge-anim;
+  animation-name: ge-anim;
 }
 @-webkit-keyframes ge-anim {
   from {
@@ -852,4 +932,4 @@ section#galleryContainer {
     stroke-dashoffset: 0px;
     fill: black;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
