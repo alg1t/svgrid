@@ -57,7 +57,7 @@ section#galleryContainer {
 .header {
   display: flex;
   justify-content: center;
-  padding-top: 6rem;
+  padding-top: 8rem;
   /* padding-bottom: 2rem; 
   font-size: 3rem; */
 }
